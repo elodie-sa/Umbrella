@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Umbrella ☂</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script type="module" src="dist/app.js"></script>
+</head>
+<style>
+    /* Centrage horizontal et vertical de tout le contenu */
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: white;
+      background-color: black;
+    }
+
+    /* Espacement et mise en forme */
+    input, button {
+      margin: 10px;
+      padding: 10px;
+      font-size: 1em;
+    }
+
+    #weatherResult {
+      margin-top: 20px;
+    }
+  </style>
+<img>
+  <img width="20%" src="umbrella.webp"></img>
+  <input type="text" id="city" placeholder="Paris" />
+  <button id="getWeather">Get Weather</button>
+  <div id="weatherResult"></div>
+</body>
+</html>
